@@ -10,12 +10,12 @@ const passwordValid = 'Добро пожаловать!';
 
 let userName = prompt('Ваш логин:');
 
-if (userName === false) {
+if (userName === null) {
    alert(cancel);
 } else if (userName === adminLogin) {
    let password = prompt('Ваш пароль:');
 
-   if (password === false) {
+   if (password === null) {
        alert (passwordInvalid);
    } else if (password === adminPassword) {
        alert (passwordValid);
